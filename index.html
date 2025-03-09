@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk Calculator for Web Developers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Risk Calculator for Web Developers</h1>
+    </header>
+    <div class="cyber-practices">
+      <form id="risk-form">
+        <h2>Input Validation and Data Handling</h2>
+        <div class="question">
+          <label>Trim Input Fields (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="trimInput" value="0" required> Yes</label>
+            <label><input type="radio" name="trimInput" value="1"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Sanitize All User Input (if not implemented, +3 risk points):</label>
+          <div>
+            <label><input type="radio" name="sanitizeInput" value="0" required> Yes</label>
+            <label><input type="radio" name="sanitizeInput" value="3"> No</label>
+          </div>
+        </div>
+
+        <h2>Authentication and Password Management</h2>
+        <div class="question">
+          <label>Enforce Strong Password Policies (if not implemented, +3 risk points):</label>
+          <div>
+            <label><input type="radio" name="strongPassword" value="0" required> Yes</label>
+            <label><input type="radio" name="strongPassword" value="3"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Limit Password Attempts (if not implemented, +2 risk points):</label>
+          <div>
+            <label><input type="radio" name="limitPassword" value="0" required> Yes</label>
+            <label><input type="radio" name="limitPassword" value="2"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Secure Password Storage (if not implemented, +4 risk points):</label>
+          <div>
+            <label><input type="radio" name="secureStorage" value="0" required> Yes</label>
+            <label><input type="radio" name="secureStorage" value="4"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Mandatory Password Updates (if not implemented, +2 risk points):</label>
+          <div>
+            <label><input type="radio" name="mandatoryUpdate" value="0" required> Yes</label>
+            <label><input type="radio" name="mandatoryUpdate" value="2"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Implement Single Sign-On (SSO) (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="sso" value="0" required> Yes</label>
+            <label><input type="radio" name="sso" value="1"> No</label>
+          </div>
+        </div>
+
+        <h2>Data Encoding and Client Security</h2>
+        <div class="question">
+          <label>Use UTF-8 Encoding (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="utf8" value="0" required> Yes</label>
+            <label><input type="radio" name="utf8" value="1"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Enable Copy/Paste Functionality (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="copyPaste" value="0" required> Yes</label>
+            <label><input type="radio" name="copyPaste" value="1"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Minimize Client-Side Cookies (if not implemented, +2 risk points):</label>
+          <div>
+            <label><input type="radio" name="cookies" value="0" required> Yes</label>
+            <label><input type="radio" name="cookies" value="2"> No</label>
+          </div>
+        </div>
+
+        <h2>Access Control and Monitoring</h2>
+        <div class="question">
+          <label>Adopt the Principle of Least Privilege (if not implemented, +3 risk points):</label>
+          <div>
+            <label><input type="radio" name="leastPrivilege" value="0" required> Yes</label>
+            <label><input type="radio" name="leastPrivilege" value="3"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Define User Roles Clearly (if not implemented, +2 risk points):</label>
+          <div>
+            <label><input type="radio" name="userRoles" value="0" required> Yes</label>
+            <label><input type="radio" name="userRoles" value="2"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Implement Comprehensive Logging (if not implemented, +2 risk points):</label>
+          <div>
+            <label><input type="radio" name="logging" value="0" required> Yes</label>
+            <label><input type="radio" name="logging" value="2"> No</label>
+          </div>
+        </div>
+
+        <h2>Architectural and Additional Considerations</h2>
+        <div class="question">
+          <label>Use an MVC Framework (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="mvc" value="0" required> Yes</label>
+            <label><input type="radio" name="mvc" value="1"> No</label>
+          </div>
+        </div>
+        <div class="question">
+          <label>Integrate CAPTCHA (if not implemented, +1 risk point):</label>
+          <div>
+            <label><input type="radio" name="captcha" value="0" required> Yes</label>
+            <label><input type="radio" name="captcha" value="1"> No</label>
+          </div>
+        </div>
+
+        <button type="button" id="calculateBtn">Calculate Risk Score</button>
+      </form>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
