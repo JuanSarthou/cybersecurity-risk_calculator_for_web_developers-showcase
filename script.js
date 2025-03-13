@@ -31,17 +31,18 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
   let riskLevel = "";
   if (totalScore <= 5) {
     riskLevel = "Low Risk";
+  } else if (totalScore <= 10) {
+    riskLevel = "Medium Risk";
   } else if (totalScore <= 15) {
-    riskLevel = "Moderate Risk";
-  } else {
     riskLevel = "High Risk";
+  } else {
+    riskLevel = "Critical Risk";
   }
 
   // Display the result
   document.getElementById("result").innerText =
     `Your risk score is: ${totalScore} (${riskLevel})`;
 });
-
 
 
 // Get modal elements
