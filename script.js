@@ -44,11 +44,9 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
     `Your risk score is: ${totalScore} (${riskLevel})`;
 });
 
-function showInfo(infoId) {
+function toggleInfo(infoId) {
   const infoBox = document.getElementById(infoId);
-  if (infoBox.style.display === "none" || infoBox.style.display === "") {
-    infoBox.style.display = "block";
-  } else {
-    infoBox.style.display = "none";
-  }
+  infoBox.style.display = (infoBox.style.display === "none" || infoBox.style.display === "") 
+    ? "block" 
+    : "none";
 }
