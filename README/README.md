@@ -8,7 +8,7 @@ The Risk Calculator allows developers to answer a series of questions related to
 
 - **Low Risk (0 to 5 points)**
 - **Medium Risk (6 to 10 points)**
-- **High Risk (10 to 15 points)**
+- **High Risk (11 to 15 points)**
 - **Critical Risk (16+ points)**
 
 The project helps identify areas that may need improvement to enhance overall cybersecurity.
