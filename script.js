@@ -72,6 +72,6 @@ window.onclick = function(event) {
 document.querySelectorAll(".info-btn").forEach(button => {
   button.addEventListener("click", function() {
     // Customize this text per question
-    openModal("Here is some explanation and recommendations for this best practice.");
+  //  openModal("Here is some explanation and recommendations for this best practice.");
   });
 });
