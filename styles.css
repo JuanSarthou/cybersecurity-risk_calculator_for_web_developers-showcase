@@ -97,6 +97,26 @@ button:hover {
   color: #000;
 }
 
+.info-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.info-btn:hover {
+  background-color: #aaa;
+}
+
+
 
 
 footer {
