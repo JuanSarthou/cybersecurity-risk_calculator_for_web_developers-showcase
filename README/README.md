@@ -7,8 +7,9 @@ A simple, interactive risk calculator designed for web developers to assess the 
 The Risk Calculator allows developers to answer a series of questions related to essential security practices. Each question has predefined risk values. Based on the answers, a final risk score is computed and categorized as:
 
 - **Low Risk (0 to 5 points)**
-- **Moderate Risk (6 to 15 points)**
-- **High Risk (16 to 29 points)**
+- **Medium Risk (6 to 10 points)**
+- **High Risk (10 to 15 points)**
+- **Critical Risk (16+ points)**
 
 The project helps identify areas that may need improvement to enhance overall cybersecurity.
 
