@@ -31,7 +31,10 @@ header, .cyber-practices {
 }
 
 .question div {
-  margin-left: 20px;
+  margin-left: 0; /* Remove the left margin */
+  display: flex;
+  justify-content: center; /* Center all child elements horizontally */
+  align-items: center;   /* Align them vertically */
 }
 
 button {
