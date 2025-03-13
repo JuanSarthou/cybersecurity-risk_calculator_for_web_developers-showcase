@@ -41,3 +41,36 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
   document.getElementById("result").innerText =
     `Your risk score is: ${totalScore} (${riskLevel})`;
 });
+
+
+
+// Get modal elements
+const modal = document.getElementById("infoModal");
+const modalText = document.getElementById("modalText");
+const spanClose = document.querySelector(".modal .close");
+
+// Function to open modal with custom text
+function openModal(text) {
+  modalText.innerText = text;
+  modal.style.display = "block";
+}
+
+// Close modal when clicking on the close button
+spanClose.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Example: Attaching info button events (assuming each question has an info button with class 'info-btn')
+document.querySelectorAll(".info-btn").forEach(button => {
+  button.addEventListener("click", function() {
+    // Customize this text per question
+    openModal("Here is some explanation and recommendations for this best practice.");
+  });
+});
