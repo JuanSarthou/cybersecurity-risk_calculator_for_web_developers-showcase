@@ -16,12 +16,14 @@
         <h2>Input Validation and Data Handling</h2>
         <div class="question">
           <label>Trim Input Fields (if not implemented, +1 risk point):</label>
-
-          <button type="button" class="info-btn" data-info="Trim input fields to avoid unnecessary white spaces and prevent user input manipulation. Recommended for better validation.">Info</button>
-
           <div>
             <label><input type="radio" name="trimInput" value="0" required> Yes</label>
             <label><input type="radio" name="trimInput" value="1"> No</label>
+            <button class="info-button" onclick="showInfo('input-info')">ℹ️ Info</button>
+         </div>
+          <div class="info-box" id="input-info">
+          ✅ Best practice: Trimming input fields means removing unnecessary leading and trailing whitespace from user inputs. This practice prevents issues such as false mismatches during validations (e.g., extra spaces causing login errors) and helps maintain consistency in data storage. It is a simple yet effective way to avoid minor bugs and improve data quality.<br>
+          🔒 Recommendation: Implement trimming both on the client side and server side. For instance, using JavaScript you can automatically trim user input before processing it.
           </div>
         </div>
         <div class="question">
@@ -189,15 +191,6 @@
   <footer>
     <p>This website is my personal portfolio, created solely for showcase purposes. All rights reserved.</p>
    </footer>
-  
-  <!-- Modal Structure -->
-  <div id="infoModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Explanation & Recommendations</h2>
-      <p id="modalText"></p>
-    </div>
-  </div>
     
   <script src="script.js"></script>
 </body>
