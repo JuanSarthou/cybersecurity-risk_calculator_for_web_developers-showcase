@@ -44,9 +44,11 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
     `Your risk score is: ${totalScore} (${riskLevel})`;
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const infoBox = document.getElementById('input-info');
-  infoBox.style.display = "none"; // Force hide on page load
+ document.addEventListener("DOMContentLoaded", () => {
+  const infoBoxes = document.querySelectorAll('.info-box');
+  infoBoxes.forEach(box => {
+    box.style.display = "none"; // Hide all info boxes on page load
+  });
 });
 
 function toggleInfo(infoId) {
@@ -55,3 +57,4 @@ function toggleInfo(infoId) {
     ? "block" 
     : "none";
 }
+
