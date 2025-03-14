@@ -44,6 +44,11 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
     `Your risk score is: ${totalScore} (${riskLevel})`;
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const infoBox = document.getElementById('input-info');
+  infoBox.style.display = "none"; // Force hide on page load
+});
+
 function toggleInfo(infoId) {
   const infoBox = document.getElementById(infoId);
   infoBox.style.display = (infoBox.style.display === "none" || infoBox.style.display === "") 
