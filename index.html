@@ -21,9 +21,9 @@
             <label><input type="radio" name="trimInput" value="1"> No</label>
           </div>
           <div>
-           <br><button class="info-button" onclick="toggleInfo('input-info')">ℹ️ Info</button>            
+           <br><button class="info-button" onclick="toggleInfo('input-info-1')">ℹ️ Info</button>            
           </div>
-          <div class="info-box" id="input-info">
+          <div class="info-box" id="input-info-1">
           ✅ Best practice: Trimming input fields means removing unnecessary leading and trailing whitespace from user inputs. This practice prevents issues such as false mismatches during validations (e.g., extra spaces causing login errors) and helps maintain consistency in data storage. It is a simple yet effective way to avoid minor bugs and improve data quality.<br>
           🔒 Recommendation: Implement trimming both on the client side and server side. For instance, using JavaScript you can automatically trim user input before processing it.
           </div>
@@ -35,10 +35,11 @@
             <label><input type="radio" name="sanitizeInput" value="0" required> Yes</label>
             <label><input type="radio" name="sanitizeInput" value="3"> No</label>
           </div>
+          
           <div>
-           <br><button class="info-button" onclick="toggleInfo('input-info')">ℹ️ Info</button>            
+           <br><button class="info-button" onclick="toggleInfo('input-info-2')">ℹ️ Info</button>            
           </div>
-          <div class="info-box" id="input-info">
+          <div class="info-box" id="input-info-2">
           ✅ Best practice: <br>
           🔒 Recommendation:
           </div>
@@ -51,6 +52,15 @@
             <label><input type="radio" name="strongPassword" value="0" required> Yes</label>
             <label><input type="radio" name="strongPassword" value="3"> No</label>
           </div>
+          
+          <div>
+           <br><button class="info-button" onclick="toggleInfo('input-info-3')">ℹ️ Info</button>            
+          </div>
+          <div class="info-box" id="input-info-3">
+          ✅ Best practice: <br>
+          🔒 Recommendation:
+          </div>
+
         </div>
         <div class="question">
           <label>Limit Password Attempts (if not implemented, +2 risk points):</label>
