@@ -2,10 +2,10 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
   // Array of all radio group names
   const groups = [
     "trimInput", "sanitizeInput",
-    "strongPassword", "limitPassword", "secureStorage", "mandatoryUpdate", "sso",
-    "utf8", "copyPaste", "cookies",
+    "strongPassword", "limitPassword", "secureStorage", "mandatoryUpdate", "sso", "InputRateLimiting",
+    "utf8", "copyPaste", "cookies", "SecurityHeaders", "InputRateLimiting",
     "leastPrivilege", "userRoles", "logging",
-    "mvc", "captcha"
+    "mvc", "captcha", "HTTPS", "VulnerabilityScanning", "LibrarySecurityAudits", "SecureAPIEndpoints"
   ];
   
   let totalScore = 0;
