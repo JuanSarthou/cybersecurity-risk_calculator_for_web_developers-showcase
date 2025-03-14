@@ -40,8 +40,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-2')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-2">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Sanitizing user input involves cleaning and filtering data to remove or neutralize potentially harmful content. This practice is critical for defending against injection attacks (like SQL injection or Cross-Site Scripting) by ensuring that malicious code is not inadvertently executed on your server or rendered in your web pages.<br>
+          🔒 Recommendation: Use established functions or libraries to sanitize and validate all user input. In PHP, for instance, you can use htmlspecialchars() to convert special characters into HTML entities, while in JavaScript, libraries such as DOMPurify are highly recommended.
           </div>
         </div>
 
@@ -57,8 +57,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-3')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-3">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Ensuring users create strong passwords minimizes the risk of account compromise by making it harder for attackers to guess or brute-force credentials. A strong password typically includes a mix of uppercase and lowercase letters, numbers, and special characters, and meets a minimum length requirement.<br>
+          🔒 Recommendation: Enforce rules both on the client and server sides. For example, in HTML you can use the pattern attribute to enforce a regex pattern.
           </div>
 
         </div>
@@ -72,8 +72,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-4')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-4">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Limiting password attempts helps prevent brute-force attacks by locking an account or delaying further attempts after several consecutive failures. This reduces the likelihood of unauthorized access through repeated guessing.<br>
+          🔒 Recommendation: Implement a mechanism to track login attempts. For example, using PHP, you can track attempts with session variables and lock the account after a threshold.
           </div>
 
         </div>
@@ -88,8 +88,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-5')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-5">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Storing passwords securely protects user credentials in the event of a data breach. Instead of saving plain text, passwords should be hashed (and salted) to prevent attackers from easily recovering the original values.<br>
+          🔒 Recommendation: Always use a strong hashing algorithm like bcrypt, Argon2, or PBKDF2. For example, in PHP you can use the password_hash function.
           </div>
           
         </div>
@@ -104,8 +104,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-6')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-6">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Requiring users to update their passwords periodically reduces the window of opportunity for attackers in case passwords have been compromised. Regular updates help ensure that even if an attacker gains access, it will be temporary.<br>
+          🔒 Recommendation: Implement a system that enforces password expiration. For instance, check the last update timestamp and force a password change after a set period (e.g., 180 days).
           </div>
           
         </div>
@@ -120,8 +120,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-7')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-7">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: SSO allows users to authenticate using a single set of credentials across multiple systems, simplifying the login process and potentially enhancing security by centralizing authentication. It also reduces password fatigue.<br>
+          🔒 Recommendation: Integrate SSO using protocols like OAuth 2.0 or SAML. For example, to initiate OAuth 2.0 with Google on the client side.
           </div>
           
         </div>
@@ -136,8 +136,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-8')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-8">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Input rate limiting restricts the number of requests a user or IP address can make in a given time period. This measure protects against brute-force attacks, abuse, and denial-of-service (DoS) attacks by controlling how frequently endpoints are accessed.<br>
+          🔒 Recommendation: For example, in a Node.js environment using Express, you can use the express-rate-limit middleware.
           </div>
           
         </div>
@@ -154,8 +154,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-9')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-9">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: UTF-8 is a widely used character encoding that supports virtually all characters from all languages. Using UTF-8 ensures that text is rendered correctly and prevents issues such as garbled characters or encoding-related vulnerabilities. It’s also important for preventing injection attacks that might exploit encoding mismatches. Additionally, UTF-8 allows the use of a much wider range of characters, including special symbols, which enhances password strength by increasing complexity and reducing the likelihood of brute force attacks.<br>
+          🔒 Recommendation: Configure your web pages and backend systems to use UTF-8 as the default encoding.
           </div>
           
         </div>
@@ -170,8 +170,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-10')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-10">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Allowing copy/paste functionality improves usability and accessibility for users, particularly when dealing with complex data such as passwords or secure tokens. Disabling copy/paste may force users to manually re-enter information, increasing the risk of input errors or the creation of weaker passwords.<br>
+          🔒 Recommendation: Avoid implementing JavaScript or CSS rules that block copy/paste actions on input fields. If you have restrictions in place for specific fields, consider allowing an override option for security-related inputs (like passwords) to improve user experience. For example, ensure your input fields do not have event listeners that block paste.
           </div>
           
         </div>
@@ -186,8 +186,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-11')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-11">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Storing sensitive data in client-side cookies can expose you to risks such as Cross-Site Scripting (XSS) and unauthorized access. Minimizing what is stored in cookies and ensuring they are properly secured helps protect user session data.<br>
+          🔒 Recommendation: Only store essential information in cookies and mark them as HttpOnly, Secure, and with an appropriate SameSite attribute. 
           </div>
           
         </div>
@@ -202,8 +202,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-12')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-12">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Security headers instruct the browser on how to handle content and protect against common web vulnerabilities such as XSS, clickjacking, and MIME-type sniffing. They add an extra layer of defense by enforcing policies that mitigate attack vectors.<br>
+          🔒 Recommendation: Configure your web server or application to include security headers. 
           </div>
           
         </div>
@@ -218,8 +218,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-13')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-13">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: CSRF (Cross-Site Request Forgery) attacks trick authenticated users into submitting malicious requests unknowingly. Implementing CSRF protection is essential for preventing unauthorized state-changing actions on behalf of the user.<br>
+          🔒 Recommendation: Implement CSRF tokens in your forms and verify them on the server side. Many frameworks provide built-in support for CSRF protection. For example, in Express.js you can use the csurf middleware.
           </div>
           
         </div>        
@@ -236,8 +236,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-14')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-14">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: The Principle of Least Privilege (PoLP) is a security best practice that ensures users, processes, and systems have only the minimal level of access—or privileges—necessary to perform their tasks. This minimizes potential damage if an account or process is compromised by reducing the available attack surface.<br>
+          🔒 Recommendation: Implement strict access controls by assigning the minimum permissions required for each user or process. In a web application, this often means checking a user's role before allowing access to sensitive operations.
           </div>
           
         </div>
@@ -252,8 +252,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-15')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-15">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Clearly defining user roles establishes a structured and organized access control system. It ensures that each user is granted only the permissions they need, which simplifies administration and improves security by preventing privilege escalation.<br>
+          🔒 Recommendation: Map out user roles (e.g., Admin, Editor, Viewer) with clearly defined permissions. Then, integrate these definitions into your authentication and authorization mechanisms.
           </div>
           
         </div>
@@ -268,8 +268,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-16')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-16">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Comprehensive logging captures essential events, errors, and user actions across your system. This is critical for security monitoring, incident response, and compliance, as it provides the necessary audit trail to detect anomalies and investigate potential breaches.<br>
+          🔒 Recommendation: Utilize established logging libraries that support various log levels and output options (e.g., file, database, external logging services). Ensure logs include context such as timestamps, user actions, and error details without exposing sensitive information.
           </div>
           
         </div>
@@ -286,8 +286,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-17')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-17">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: An MVC (Model-View-Controller) framework separates an application into three main components—data (model), user interface (view), and control logic (controller). This separation of concerns improves code organization, maintainability, and security by enforcing boundaries between the data handling, business logic, and presentation layers.<br>
+          🔒 Recommendation: Adopt a modern MVC framework that fits your language and project needs. For example, if you’re using Python, consider Django. 
           </div>
           
         </div>
@@ -302,8 +302,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-18')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-18">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: CAPTCHA systems help differentiate between genuine users and automated bots, reducing the risk of spam, abuse, and automated brute-force attacks on your forms and login pages.<br>
+          🔒 Recommendation: Integrate a CAPTCHA service like Google reCAPTCHA.
           </div>
           
         </div>
@@ -318,8 +318,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-19')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-19">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: HTTPS encrypts data transmitted between clients and servers, safeguarding sensitive information (like login credentials or personal data) from eavesdropping and tampering. It’s essential for building user trust and meeting modern security standards.<br>
+          🔒 Recommendation: Obtain an SSL/TLS certificate and configure your web server to enforce HTTPS.      
           </div>
           
         </div>
@@ -334,8 +334,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-20')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-20">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Regular vulnerability scanning identifies potential security weaknesses in your application before attackers can exploit them. It’s a proactive approach to maintaining security hygiene by uncovering misconfigurations, outdated software, and other vulnerabilities.<br>
+          🔒 Recommendation: Employ tools such as OWASP ZAP, Nessus, or Acunetix for periodic scans.
           </div>
           
         </div>
@@ -350,8 +350,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-21')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-21">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Third-party libraries can be an integral part of modern applications, but they might also introduce vulnerabilities if not properly maintained. Auditing these libraries ensures that you’re not inadvertently exposing your application to known security issues.<br>
+          🔒 Recommendation: Regularly review and update your dependencies, and use automated tools to check for vulnerabilities.
           </div>
           
         </div>        
@@ -366,8 +366,8 @@
            <br><button class="info-button" onclick="toggleInfo('input-info-22')">ℹ️ Info</button>            
           </div>
           <div class="info-box" id="input-info-22">
-          ✅ Best practice: <br>
-          🔒 Recommendation:
+          ✅ Best practice: Securing API endpoints prevents unauthorized access to your data and services. Without proper security, APIs can become entry points for attackers, exposing sensitive data or allowing harmful operations. <br>
+          🔒 Recommendation: Implement robust authentication (e.g., API keys, JWT tokens), input validation, and rate limiting. 
           </div>
           
         </div>
