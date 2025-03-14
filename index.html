@@ -20,11 +20,14 @@
             <label><input type="radio" name="trimInput" value="0" required> Yes</label>
             <label><input type="radio" name="trimInput" value="1"> No</label>
           </div>
+          <div>
+           <br><button class="info-button" onclick="toggleInfo('input-info')">ℹ️ Info</button>            
+          </div>
           <div class="info-box" id="input-info">
-          <br><button class="info-button" onclick="toggleInfo('input-info')">ℹ️ Info</button>            
           ✅ Best practice: Trimming input fields means removing unnecessary leading and trailing whitespace from user inputs. This practice prevents issues such as false mismatches during validations (e.g., extra spaces causing login errors) and helps maintain consistency in data storage. It is a simple yet effective way to avoid minor bugs and improve data quality.<br>
           🔒 Recommendation: Implement trimming both on the client side and server side. For instance, using JavaScript you can automatically trim user input before processing it.
           </div>
+          
         </div>
         <div class="question">
           <label>Sanitize All User Input (if not implemented, +3 risk points):</label>
